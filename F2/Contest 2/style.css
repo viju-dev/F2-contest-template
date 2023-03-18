@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+#start,
+#Race,
+#racescore,
+#longjump,
+#longscore,
+#highjump,
+#highscore,
+#Award,
+#division {
+  text-align: center;
+  font-family: sans-serif;
+  /* background-color: red; */
+}
+#table,
+#table2,
+#table3,
+#table4 {
+  display: none;
+  /* border: 2px solid red; */
+  width: 30vw;
+  margin: auto;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+tr {
+  background-color: rgb(191, 187, 187);
+}
+th {
+  width: 100%;
+}
+td {
+  text-align: center;
+}
+ul {
+  font-size: 2rem;
+  padding: 10px;
+  font-family: sans-serif;
+}
