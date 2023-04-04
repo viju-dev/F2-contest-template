@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STudent Management CRUD</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h2>Student Management CRUD</h2>
+        </div>
+        <form>
+            <div class="row">
+                <div class="col" >
+                    <input id="name" type="text" placeholder="Name" />
+                </div>
+                <div class="col" >
+                    <input id="emailId" type="text" placeholder="Email" />
+                </div>
+                <div class="col" >
+                    <input id="gpa" type="text" placeholder="GPA" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" >
+                    <input id="age" type="text" placeholder="Age" />
+                </div>
+                <div class="col" >
+                    <input id="degree" type="text" placeholder="Degree" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" id="addButton">
+                    <input class="btn-lg" type="button" value="Add Student" onclick="addStudent();" />
+                </div>
+                <div class="col" id="editButton" style="display: none">
+                    <input id="update" class="btn-lg" type="button" value="Edit Student" data-myid=""  onclick="updateStudent(this.getAttribute('data-myid'))"/>
+                </div>
+            </div>
+        </form>
+        <br>
+        <br>
+        <br>
+        <div class="m-10" id="searchSec">
+            <input id="searchBox" type="text" placeholder="Search By Name, email or degree" size="100" onchange="search()" />
+        </div>
+        <br>
+        <br>
+
+        <div class="" id="tableSec">
+            <table class="table" id="sudentTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>GPA</th>
+                        <th>Degree</th>
+                    </tr>
+                </thead>
+                <tbody id="sudentTblBody">
+                
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

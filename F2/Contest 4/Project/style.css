@@ -1,0 +1,54 @@
+
+* {
+  box-sizing: border-box;
+}
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    background-color: grey;
+   
+}
+
+/* Create three equal columns that floats next to each other */
+.col {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+   
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  input {
+    width: 100%;
+    height: 30px;
+    /* border: none; */
+    outline: none;
+  }
+  .btn-lg {
+    width: 40%;
+  }
+  
+  .m-10 {
+    margin: 10px;
+  }
+
+ table {
+  width: 100%;
+  text-align: left;
+  border: 1px solid black;
+  border-collapse: collapse;
+ }
+
+ th,td {
+  padding: 10px;
+  border: 1px solid black;
+  /* border-collapse: collapse; */
+ }
+
