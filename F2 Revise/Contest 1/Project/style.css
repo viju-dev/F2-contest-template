@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+h2{
+   font-family: 'Merriweather', serif;;
+    /* font-style: italic; */
+}
+.text-center{
+    text-align: center;
+}
+button{
+    width: auto;
+    height: 30px;
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 5px;
+}
