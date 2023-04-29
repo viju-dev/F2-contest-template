@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccioJob Fusion</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+          <img src="/acciojobCuisine_logo.png" alt="Restaurant Logo">
+          <h1>AccioJob Fusion</h1>
+        </div>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order-section">Order</a></li>
+            <!-- <li><a href="#contact">Contact</a></li> -->
+          </ul>
+        </nav>
+        <button class="cta">Make an Order</button>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+      
+      <!-- home  -->
+      <section id="home">
+        <div class="container">
+          <h2>Welcome to AcioJob Fusion</h2>
+          <p>Discover our menu and enjoy our delicious dishes in a cozy atmosphere</p>
+          <button class="cta"><a href="#menu" style="text-decoration: none;color: white;">View Menu</a></button>
+        </div>
+      </section>
+      
+
+      <!-- menu -->
+      <section id="menu">
+        <div class="container">
+          <h2>Our Menu</h2>
+          <div class="menu-items"></div>
+        </div>
+      </section>
+
+      <!-- order -->
+      <section id="order-section" class="">
+        <h2>Order</h2>
+
+        <table class="order-table">
+          <thead>
+            <tr>
+              <th>Item Name</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- JavaScript code will populate this table with order items -->
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td id="total-price">$0.00</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <button id="pay-btn">Pay Now</button>
+      </section>
+      
+
+      <!-- feedback
+      <section id="feedback-section" class="feedback-section">
+        <div class="feedback-container">
+            <h2>Thank you for dining with us!</h2>
+        <p>We hope you enjoyed your meal. Please take a moment to give us your feedback:</p>
+        <form id="feedback-form">
+          <label for="rating">Rating</label>
+          <select id="rating" name="rating" required>
+            <option value="">-- Please Select --</option>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+          </select>
+      
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" required></textarea>
+      
+          <button type="submit" id="submit-btn">Submit</button>
+        </form>
+        </div>
+      </section>
+       -->
+      
+      <!-- script -->
+      <script  src="./scipt.js"></script>
+    
+</body>
+</html>
