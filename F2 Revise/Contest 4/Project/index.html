@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <h2>Student Portal</h2>
+    </div>
+    <div class="container">
+        <div class="searchSection">
+            <input id="searchId" type="text" placeholder="Search">
+            <input id="searchBtn" class="btn-m" type="button" value="Search" onclick="searchStudent();">
+        </div>
+        <div class="buttonsGroup">
+            <input id="searchBtn" class="btn-m" type="button" value="Sort A->Z" onclick="sorting();">
+            <input id="searchBtn" class="btn-m" type="button" value="Sort Z->A" onclick="reverseSorting();">
+            <input id="searchBtn" class="btn-m" type="button" value="Sort By Marks" onclick="marksSort();">
+            <input id="searchBtn" class="btn-m" type="button" value="Sort By Passing" onclick="passSort();">
+            <input id="searchBtn" class="btn-m" type="button" value="Sort By Class" onclick="classSort();">
+            <input id="searchBtn" class="btn-m" type="button" value="Sort By Gender" onclick="genderSort();">
+        </div>
+        <div class="studentData">
+            <div id="allStudents">
+                <h2 class="m-10">All Students Data:</h2>
+                <table id="studentTable">
+                    <thead>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                        <th>Passing</th>
+                        <th>Email</th>
+                    </thead>
+                    <tbody id="studentTbody">
+                        <!-- <tr>
+                            <td> <span><img src="https://robohash.org/corporisquiaperiam.png?size=50x50&set=set1" alt="">juhygtf</span></td>
+                        </tr> -->
+                        <!-- <tr>
+                            <td> <span><img src="https://robohash.org/corporisquiaperiam.png?size=50x50&set=set1" alt=""><p>hgfd</p></span></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="guysData" style="display:none;">
+                <h2 class="m-10">Male Students Data:</h2>
+                <table id="guysTable" >
+                    <thead>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                        <th>Passing</th>
+                        <th>Email</th>
+                    </thead>
+                    <tbody id="guysTbody">
+    
+                    </tbody>
+                </table>
+            </div>
+            <div id="girlsData" style="display:none;">
+                <h2 class="m-10">Female Students Data:</h2>
+                <table id="girlsTable" >
+                    <thead>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                        <th>Passing</th>
+                        <th>Email</th>
+                    </thead>
+                    <tbody id="girlsTbody">
+                       
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
