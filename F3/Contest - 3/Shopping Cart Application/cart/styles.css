@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+
+    background-color: black;
+    padding: 1rem;
+    font-size: 1rem;
+    height: 70px;
+}
+
+nav .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .nav-items a {
+    margin: 0 1rem;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+}
+
+main .section1 {
+    width: 70%;
+    margin-top: 0.8rem;
+}
+
+.title {
+    font-weight: 600;
+    margin-top: 0.8rem;
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+}
+
+main .items {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+main .items .item {
+    width: 30%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main .items .item img {
+    max-width: 100%;
+}
+
+main .items .item .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .items .item .info {
+    padding: 1rem;
+}
+
+main .items .item button {
+    width: 100%;
+    border-radius: none;
+    border: none;
+    padding: 1rem;
+    font-size: 0.7rem;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+main .items .item .colors {
+    display: flex;
+    margin: 1rem 0;
+}
+
+main .items .item .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+
+main .section2{
+    width: 30%;
+    padding: 1rem 1rem 1rem 0;
+    margin-top: 0.8rem;
+}
+
+.section2 .checkout-list{
+    padding: 1rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.checkout-list div{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+
+.checkout-list .list{
+    border-bottom: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    font-weight: 300;
+}
+
+.checkout-list .list .list-item{
+    font-size: 10px;
+}
+
+.list-item #item-title{
+    float: left;
+}
+.list-item #price{
+    float: right;
+}
+
+.checkout-list .total{
+    font-size: 10px;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid white;
+}
+.total #text{
+    float: left;
+}
+.total #total{
+    float: right;
+}
+
+.checkout-list button{
+    border: none;
+    background-color: white;
+    padding: 0.3rem 0.8rem;
+}
