@@ -5,9 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Razorpay Button</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<style>
+  .btn {
+	  background-color: #13abc4; 
+    margin : 20px 200px 0px 200px;
+    font-family: "Trebuchet MS"
+}
+.text{
+  margin :100px 0px 15px 50px;
+  font-family: "Trebuchet MS"
+}
+</style>
   </head>
   <body>
-    <button id="rzp-button1">Pay</button>
+    <div style="text-align: center;">
+      <h3 class="text"> To make payement click on Pay</h3>
+    <button class="btn" id="rzp-button1">Pay</button>
+    </div>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="script.js"></script>
   </body>
