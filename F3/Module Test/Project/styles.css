@@ -1,0 +1,51 @@
+.iconsSearch {
+    /* padding: 3.5px 3.5px; */
+    /* padding: 12px 3.5px 0px 3.5px; was for non box-sizing: border-box; */
+    padding: 9px 3.5px 0px 3.5px;
+    background: white;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border: 1px solid #EAECF0 ;
+    border-radius: 3px 0 0 3px;
+    margin-left: 2px;
+    border-right: none;
+  }
+
+  input{
+    /* width: 905px; */
+    width: 50vw;
+    padding: 7.5px;
+    outline: none;
+    /* box-sizing: content-box; */
+    border: 1px solid #EAECF0;
+    border-left: none;
+    border-radius: 0 3px 3px 0;
+    /* height: 30px; was for non box-sizing: border-box;*/
+    width: 95%; 
+    height: 37px;
+    font-size: large;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 54px;
+    justify-items: center;
+  
+}
+.item{
+    background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+overflow: hidden;
+transition: transform 0.2s ease-in-out;
+cursor: pointer;
+width: 355.55px;
+margin-top: 40px;
+padding: 10px;
+}
+span , input {
+    /* color: grey; */
+    font-weight: normal;
+}
