@@ -22,7 +22,7 @@ function generateaccessToken() {
 }
 
 if(accessToken){ //if user is already logged in
-    location.replace("/shop")
+    location.replace(window.location.href.replace("signup","shop"));
 }
 
 function funcConfirmPassord(pass, confirmPass) { //for checking if both the password matches
@@ -94,7 +94,9 @@ function createUser(){ //after signup create user
                     let Users = JSON.parse(localStorage.getItem("Users"))
                     Users.push(obj)
                     localStorage.setItem("Users", JSON.stringify(Users))
-                    location.replace("/shop")
+                    // location.replace("/shop")
+                    location.replace(window.location.href.replace("signup","shop"));
+                    
                 }
                 else{
                     alert("Password doesn't match.")

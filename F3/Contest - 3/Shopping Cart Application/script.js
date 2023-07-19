@@ -14,13 +14,17 @@ if(!accessToken){ //if user is not logged in
   links[4].href = "/signup" //profile button
 }
 else{
-  location.replace("/shop")
+  location.replace(window.location.href);
 }
 
 login.addEventListener("click", () => {
-    location.replace("./login/index.html")
+    // location.replace("./login/index.html");
+
+    location.replace(window.location.href.replace("index.html","login/index.html"));
 })
 
 signup.addEventListener("click", () => {
-    location.replace("./signup/index.html")
+    // location.replace("./signup/index.html")
+    
+    location.replace(window.location.href.replace("index.html","signup/index.html"));
 })

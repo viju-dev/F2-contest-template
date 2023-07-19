@@ -3,7 +3,7 @@ const checkoutBtn = document.getElementById("checkout-btn")
 
 let accessToken = localStorage.getItem("accessToken")
 if(!accessToken){
-  location.replace("/login")
+  location.replace(window.location.href.replace("cart","login"));
 }
 
 checkoutBtn.addEventListener("click", () => {
@@ -12,7 +12,7 @@ checkoutBtn.addEventListener("click", () => {
     alert("No items in the cart.")
   }
   else {
-    location.replace("/razorpay")
+    location.replace(window.location.href.replace("cart","razorpay"));
   }
 })
 

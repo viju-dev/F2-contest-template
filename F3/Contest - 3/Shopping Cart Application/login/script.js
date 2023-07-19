@@ -2,7 +2,8 @@ let accessToken = localStorage.getItem("accessToken")
 let Users = JSON.parse(localStorage.getItem("Users"))
 
 if(accessToken){ //if user already logged in
-    location.replace("/shop")
+    location.replace(window.location.href.replace("login","shop"));
+
 }
 
 function generateaccessToken() {
@@ -30,7 +31,7 @@ login.addEventListener("click", () => {
                     if(ele.password === password.value){
                         generateaccessToken()
                         localStorage.setItem("currentUser", JSON.stringify(ele))
-                        location.replace("/shop")
+                        location.replace(window.location.href.replace("login","shop"));
                         flag = true
                         break
                     }

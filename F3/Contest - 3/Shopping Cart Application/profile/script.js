@@ -12,7 +12,7 @@ const logout = document.getElementById("logout")
 
 let accessToken = localStorage.getItem("accessToken")
 if(!accessToken){
-  location.replace("/login")
+    location.replace(window.location.href.replace("profile","login"));
 }
 
 let data = getData()
@@ -133,5 +133,5 @@ logout.addEventListener("click", () => {
     localStorage.setItem("Users", JSON.stringify(Users))
     localStorage.removeItem("accessToken")
     localStorage.removeItem("currentUser")
-    location.replace("/")
+    location.replace(window.location.href.replace("profile","profile"));
 })

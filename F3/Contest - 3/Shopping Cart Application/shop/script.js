@@ -4,7 +4,7 @@ const searchProducts = document.getElementById("search-products")
 
 let accessToken = localStorage.getItem("accessToken")
 if(!accessToken){
-  location.replace("/login")
+  location.replace(window.location.href.replace("shop","login"));
 }
 
 searchProducts.addEventListener("keyup", () => { //get items by search(input)
